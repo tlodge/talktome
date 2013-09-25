@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block front %}
+
+<div id="audience_send">
+   <div class="row">
+        <div class="col-md-10">
+        
+            <div class="row">
+                <div class="col-md-12">  
+                    <h3> 1. Your message </h3>                 
+                   <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>      
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                     <h3> 2. Choose the audience</h3>                      
+                    <label class="checkbox-inline">
+                        <input type="radio" name="audience" id="inlineCheckbox1" value="option1"> Everyone
+                        <span class="help-block">This will send to everyone!</span>
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="audience" id="inlineCheckbox2" value="option2"> A previous audience
+                        <span class="help-block">Chose an audience you've used before</span>
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="audience" id="inlineCheckbox3" value="option3"> A new audience
+                        <span class="help-block">Select a new audience</span>
+                    </label>
+                </div>      
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-default" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div>
+            <div class="row">
+                    <div class="col-md-12">
+                        <h3> 3. How would you like to send it?</h3>  
+                        <label class="checkbox-inline">
+                            <input type="radio" name="audience" id="inlineCheckbox1" value="option1"> Mobile or Email
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="radio" name="audience" id="inlineCheckbox2" value="option2"> Just Mobile
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="radio" name="audience" id="inlineCheckbox3" value="option3"> Just Email
+                        </label>                       
+                    </div>      
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3> 4. send it</h3>  
+                       <button type="button" class="btn btn-primary">send</button>  
+                    </div>      
+                </div>        
+            </div>
+        
+             <div class="col-md-2">
+               This is some span 2
+            </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>TTM</title>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap/dist/css/bootstrap.min.css') }}">
+<!--<script src="{{ url_for('static', filename='jquery/jquery-1.7.2.min.js') }}"></script>
+<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/knockout/knockout-3.0.0beta.js') }}"></script>-->
+<div class="container">
+        {% for message in get_flashed_messages() %}
+        <div class="alert alert-error">
+            {{ message }}
+        </div>
+        {% endfor %}
+       {% block front %}{% endblock %}  
+</div>
+<script data-main="{{ url_for('static', filename='js/app.js') }}" src="{{ url_for('static', filename='js/require/require.js') }}">  </script>
+

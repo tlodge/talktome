@@ -34,3 +34,6 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+#bootstrap compilation stuff
+static/bootstrap/node_modules/
